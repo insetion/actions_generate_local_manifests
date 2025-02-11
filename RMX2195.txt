@@ -1,0 +1,13 @@
+repo init -u https://github.com/LineageOS/android.git -b lineage-20.0 --git-lfs
+
+git clone https://github.com/nurfinzmuhamad14/device_realme_RMX2195 device/realme/RMX2195 -b lineage-20
+
+git clone https://github.com/nurfinzmuhamad14/kernel_realme_RMX2195 kernel/realme/RMX2195 -b lineage-20
+
+git clone https://github.com/nurfinzmuhamad14/vendor_realme_RMX2195 vendor/realme/RMX2195 -b android-11
+
+git clone https://github.com/LineageOS/android_hardware_oplus hardware/oplus -b lineage-20
+
+git clone https://github.com/UdyneO2/realme_vendor_qcom.git -b main tmp
+cp -avr tmp/source/android/kernel kernel/
+cp- avr tmp/source/android/vendor kernel/
